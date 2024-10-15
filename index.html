@@ -87,14 +87,15 @@
             <td style="padding:20px;width:100%;vertical-align:middle">
               <heading>Research</heading>
               <p>
-                My research interests lie in the general area of artificial intelligence, particularly in <b>efficient deep learning</b> and <b>human-centric computer vision</b>. More concretely, My research interests focus on quantization, algorithm-hardware co-design, human-object interation, and healthcare. Representative papers are <span class="highlight">highlighted</span>.
+                My research interests lie in the general area of artificial intelligence, particularly in <b>efficient deep learning</b> and <b>human-centric computer vision</b>. More concretely, My research interests focus on quantization, algorithm-hardware co-design, human-object interation, and healthcare. 
               </p>
             </td>
           </tr>
         </tbody></table>
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
-          <tr bgcolor="#ffffd0">
+          <tr><td><h3>Efficient AI Algorithm</h3></td></tr>
+          <tr>
             <td style="padding:20px;width:25%;vertical-align:middle">
               <div class="one">
                 <div class="two" id='mpi_image'><img src='images/rolora.png', height="70" width="180"></div>
@@ -114,7 +115,7 @@
             </td>
           </tr>
 
-          <tr bgcolor="#ffffd0">
+          <tr>
             <td style="padding:20px;width:25%;vertical-align:middle">
               <div class="one">
                 <div class="two" id='mpi_image'><img src='images/COT-MAX.png', height="80" width="190"></div>
@@ -134,27 +135,7 @@
             </td>
           </tr>
 
-          <tr></tr>
-            <td style="padding:20px;width:25%;vertical-align:middle">
-              <div class="one">
-                <div class="two" id='mpi_image'><img src='images/GQA-LUT.png', height="72" width="190"></div>
-              </div>
-            </td>
-            <td style="padding:20px;width:75%;vertical-align:middle">
-              <papertitle>Genetic Quantization-Aware Approximation for Non-Linear Operations in Transformers</papertitle>
-              <br>
-              Pingcheng Dong, Yonghao Tan, Dong Zhang, Tianwei Ni, Xuejiao Liu, Yu Liu, Peng Luo, Luhong Liang, Shih-Yang Liu, <b>Xijie Huang</b>, Huaiyu Zhu, Yun Pan, Fengwei An, Kwang-Ting Cheng
-              <br>
-              <em>ACM/IEEE Design Automation Conference (DAC) 2024</em>
-              <br>
-              <a href="https://arxiv.org/abs/2403.19591">Paper</a>/<a href="https://github.com/PingchengDong/GQA-LUT">Code</a>
-              <p></p>
-              <p>A genetic LUT-Approximation algorithm namely GQA-LUT that can automatically determine the parameters with quantization awareness. The results demonstrate that GQA-LUT achieves negligible degradation on the challenging semantic segmentation task for both vanilla and linear Transformer models. 
-              </p>
-            </td>
-          </tr>
-
-          <tr bgcolor="#ffffd0">
+          <tr>
             <td style="padding:20px;width:25%;vertical-align:middle">
               <div class="one">
                 <div class="two" id='mpi_image'><img src='images/QAT-ACS.png', height="100" width="190"></div>
@@ -174,7 +155,7 @@
             </td>
           </tr>
 
-          <tr bgcolor="#ffffd0">
+          <tr>
             <td style="padding:20px;width:25%;vertical-align:middle">
               <div class="one">
                 <div class="two" id='mpi_image'><img src='images/variation.png', height="70" width="190"></div>
@@ -217,6 +198,48 @@
           <tr>
             <td style="padding:20px;width:25%;vertical-align:middle">
               <div class="one">
+                <div class="two" id='loss_image'><img src='images/SDQ.png', height="140" width="180"></div>
+              </div>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+                <papertitle>SDQ: Stochastic Differentiable Quantization with Mixed Precision</papertitle>
+              <br>
+              <b>Xijie Huang</b>, Zhiqiang Shen, Shichao Li, Zechun Liu, Xianghong Hu, Jeffry Wicaksana, Eric Xing, Kwang-Ting Cheng
+              <br>
+              <em>ICML</em>, 2022 &nbsp <font color="red"><strong>(Spotlight)</strong></font>
+              <br>
+              <a href="https://arxiv.org/abs/2206.04459">Paper</a> /
+              <a href="https://www.bilibili.com/video/BV1uY4y1E7Nk/?share_source=copy_web&vd_source=9b0b25da7812c022f1ee27fdc58aeb82">Talk</a> / 
+              <a href="https://icml.cc/media/icml-2022/Slides/16258.pdf">Slides</a> 
+              <p>A novel stochastic quantization framework to learn the optimal mixed precision quantization strategy. </p>
+            </td>
+          </tr>
+
+          <tr><td><h3>Efficient AI Hardware</h3></td></tr>
+
+          <tr></tr>
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='mpi_image'><img src='images/GQA-LUT.png', height="72" width="190"></div>
+              </div>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <papertitle>Genetic Quantization-Aware Approximation for Non-Linear Operations in Transformers</papertitle>
+              <br>
+              Pingcheng Dong, Yonghao Tan, Dong Zhang, Tianwei Ni, Xuejiao Liu, Yu Liu, Peng Luo, Luhong Liang, Shih-Yang Liu, <b>Xijie Huang</b>, Huaiyu Zhu, Yun Pan, Fengwei An, Kwang-Ting Cheng
+              <br>
+              <em>ACM/IEEE Design Automation Conference (DAC) 2024</em>
+              <br>
+              <a href="https://arxiv.org/abs/2403.19591">Paper</a>/<a href="https://github.com/PingchengDong/GQA-LUT">Code</a>
+              <p></p>
+              <p>A genetic LUT-Approximation algorithm namely GQA-LUT that can automatically determine the parameters with quantization awareness. The results demonstrate that GQA-LUT achieves negligible degradation on the challenging semantic segmentation task for both vanilla and linear Transformer models. 
+              </p>
+            </td>
+          </tr>
+
+          <tr></tr>
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
                 <div class="two" id='mpi_image'><img src='images/TCAS.png', height="120" width="190"></div>
               </div>
             </td>
@@ -234,9 +257,9 @@
             </td>
           </tr>
 
-          
+          <tr><td><h3>Human-centric Vision</h3></td></tr>
 
-          <tr>
+          <tr></tr>
             <td style="padding:20px;width:25%;vertical-align:middle">
               <div class="one">
                 <div class="two" id='mpi_image'><img src='images/VideoPro.png', height="120" width="190"></div>
@@ -253,26 +276,6 @@
               <p></p>
               <p> A visual analytics approach to support flexible and scalable video data programming for model steering with reduced human effort.
               </p>
-            </td>
-          </tr>
-
-          <tr bgcolor="#ffffd0">
-            <td style="padding:20px;width:25%;vertical-align:middle">
-              <div class="one">
-                <div class="two" id='loss_image'><img src='images/SDQ.png', height="140" width="180"></div>
-              </div>
-            </td>
-            <td style="padding:20px;width:75%;vertical-align:middle">
-                <papertitle>SDQ: Stochastic Differentiable Quantization with Mixed Precision</papertitle>
-              <br>
-              <b>Xijie Huang</b>, Zhiqiang Shen, Shichao Li, Zechun Liu, Xianghong Hu, Jeffry Wicaksana, Eric Xing, Kwang-Ting Cheng
-              <br>
-              <em>ICML</em>, 2022 &nbsp <font color="red"><strong>(Spotlight)</strong></font>
-              <br>
-              <a href="https://arxiv.org/abs/2206.04459">Paper</a> /
-              <a href="https://www.bilibili.com/video/BV1uY4y1E7Nk/?share_source=copy_web&vd_source=9b0b25da7812c022f1ee27fdc58aeb82">Talk</a> / 
-              <a href="https://icml.cc/media/icml-2022/Slides/16258.pdf">Slides</a> 
-              <p>A novel stochastic quantization framework to learn the optimal mixed precision quantization strategy. </p>
             </td>
           </tr>
 
